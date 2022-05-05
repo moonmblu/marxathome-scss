@@ -1,0 +1,9 @@
+{
+  "name": "marxathome-scss",
+  "version": "0.0.1",
+  "description": "scss variables and utilities for marxathome.com",
+  "main": "index.js",
+  "repository": "git@github.com:moonmblu/marxathome-scss.git",
+  "author": "mblu",
+  "license": "GPLv3"
+}

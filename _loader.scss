@@ -1,0 +1,39 @@
+@import "./_colors.scss";
+
+.loading-header {
+  font-size: 50px;
+  font-family: "Freckle Face", cursive;
+  color: $flame;
+}
+
+.loading-bar {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-ball {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    background: $flame;
+    animation-name: fadeIn;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @for $i from 1 through 5 {
+    .ball-#{$i} {
+      animation-delay: #{calc(100 * $i)}ms;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
